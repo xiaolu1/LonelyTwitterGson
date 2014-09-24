@@ -9,20 +9,24 @@ public class Tweet implements Serializable {
 	
 	private Date tweetDate;
 	private String tweetBody;
+	private int summaryTweet;
 	
 	public Tweet() {
 		super();
 	}
 
-	public Tweet(Date tweetDate, String tweetBody) {
+	public Tweet(Date tweetDate, String tweetBody,int summaryTweet) {
 		this.tweetDate = tweetDate;
 		this.tweetBody = tweetBody;
+		this.summaryTweet=summaryTweet;
 	}
 
 	public Date getTweetDate() {
 		return tweetDate;
 	}
-
+	public int getTweetSummary() {
+		return summaryTweet;
+	}
 	public void setTweetDate(Date tweetDate) {
 		this.tweetDate = tweetDate;
 	}
